@@ -1,0 +1,264 @@
+/* General CSS */
+
+html {
+	font-size: 18px;
+	line-height: 1.4;
+	font-family: Helvetica, sans-serif;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+/* Header */
+
+header {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+	height: 30rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 3rem;
+}
+
+.banner-top {
+    background-color: cadetblue;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative;
+    top: 1rem;
+}
+
+.banner-top img {
+	height: 1.5rem;
+	width: auto; 
+	margin: 0 1rem 0 2rem;
+}
+
+.banner-top .main-logo {
+	display: flex;
+	align-items: center;
+}
+
+nav span {
+	display: inline-block;
+	padding: 1rem 2rem 1rem 0;
+}
+
+.menu {
+	display: none;
+}
+
+.main-banner {
+	width: 1032px;
+}
+
+h1 {
+	padding: 1.5rem 5rem;
+	background-color: white;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+	text-transform: uppercase;
+	position: static;
+	margin-top: 10rem;
+	display: inline-block;
+    float: right;
+}
+
+
+
+/* Main Content of Page */
+
+
+/* Pictures */
+
+.pictures {
+	display: flex;
+	justify-content: center;
+	/*margin-top: 3rem;*/
+	text-align: center;
+}
+
+.pic {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 8rem;
+}
+
+.pictures img {
+	display: block;
+}
+
+.pictures .pic {
+	margin: 0 3rem 0 3rem;}
+
+.paper img {
+	width: 3rem;
+}
+
+.ruler img,
+.truck img {
+	width: 5rem;
+}
+
+/* Main text and stuff */
+
+.main-text {
+	margin-top: 3rem;
+	display: flex;
+}
+
+.text-block {
+	width: 35%;
+	display: inline-block;
+	margin-left: 5%;
+}
+
+.main-text h2 {
+	font-weight: bold;
+	font-size: 1rem;
+	color: white;
+	background-color: cadetblue;
+	padding: 0.5rem 0 0.5rem 1.25rem;
+	max-width: 10rem;
+	display: block;
+	margin-bottom: 1rem;
+}
+
+
+/* Footer */
+
+.footer {
+	margin-top: 5rem;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	background-color: azure;
+}
+
+footer img {
+	height: 1.5rem;
+	padding: 4rem 1rem 4rem 4rem;
+}
+
+
+@media only screen and (max-width: 1040px) {
+
+	header {
+		height: 22rem;
+	}
+	
+	.container {
+		width: 100%;
+	}
+
+	.banner-top {
+		top: 0;
+	}
+
+	.main-banner {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+	}
+
+	h1 {
+		padding: 0.75rem 4rem;
+		font-size: 1.33rem;
+		margin-top: 5rem;
+		float: none;
+		position: static;
+		margin-right: 2rem;
+	}
+}
+
+
+@media only screen and (max-width: 700px) {
+
+	.menu {
+		display: block;
+	}
+
+	.link {
+		display: none;
+	}
+
+	.main-logo .logo-text, 
+	footer .logo-text {
+		display: none;
+	}
+
+	h1 {
+		font-size: 1rem;
+		padding: 1rem 0;
+		text-align: center;
+		margin-top: 9rem;
+		width: 100%;
+		margin-right: 0;
+	}
+
+	header {
+		background-position: 20%;
+		height: 17rem;
+		margin-bottom: 3.77rem;
+	}
+
+	.pictures {
+		flex-direction: column;
+	}
+
+	.pic {
+		height: 6rem;
+		padding-bottom: 1.54rem;
+		font-size: 0.77rem;
+	}
+
+	.main-text {
+		display: block;
+		margin-top: 3.77rem;
+	}
+
+	.text-block {
+		display: block;
+		width: 100%;
+		margin-bottom: 4rem;
+		margin-left: 0;
+	}
+
+	.main-text h2 {
+		width: 100%;
+		text-align: center;
+		padding: 0.5rem 0;
+	}
+
+	.main-text p {
+		font-size: 0.77rem;
+	}
+
+	footer {
+		justify-content: center;
+	}
+
+}
+
+
+
+
+
+
+
+
+
